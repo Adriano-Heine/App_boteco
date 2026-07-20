@@ -124,7 +124,7 @@ export default function TelaResumo({
       text += `✅ *Total Geral*: ${formatBRL(calculations.totalGeral)}\n`;
     }
 
-    text += `\n💡 Dividido com *Racha Conta* — https://github.com/jorgeheine`;
+    text += `\n💡 Dividido com *Racha Conta* — https://www.instagram.com/solucoes_premium/`;
 
     // Attempt standard copy with fallback
     let copiouSucesso = false;

@@ -9,13 +9,13 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=192&h=192&fit=crop&q=80",
-      "type": "image/jpeg",
+      "src": "https://res.cloudinary.com/dfbsag282/image/upload/v1784584444/Boteco_pwa_jp0cod.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=512&h=512&fit=crop&q=80",
-      "type": "image/jpeg",
+      "src": "https://res.cloudinary.com/dfbsag282/image/upload/v1784584444/Boteco_pwa_jp0cod.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ]
