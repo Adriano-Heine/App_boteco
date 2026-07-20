@@ -30,8 +30,8 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // Only intercept HTTP/HTTPS requests
-  if (!event.request.url.startsWith('http')) return;
+  // Only intercept GET and HTTP/HTTPS requests
+  if (event.request.method !== 'GET' || !event.request.url.startsWith('http')) return;
 
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
@@ -45,7 +45,12 @@ self.addEventListener('fetch', (event) => {
         
         // Cache the newly fetched resource if it's a static file or page
         const url = event.request.url;
-        if (url.includes('.js') || url.includes('.css') || url.includes('unsplash.com')) {
+        if (
+          url.includes('.js') || 
+          url.includes('.css') || 
+          url.includes('cloudinary.com') || 
+          url.includes('unsplash.com')
+        ) {
           const responseToCache = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(event.request, responseToCache);
@@ -53,8 +58,6 @@ self.addEventListener('fetch', (event) => {
         }
 
         return networkResponse;
-      }).catch(() => {
-        // Fallback or ignore
       });
     })
   );
