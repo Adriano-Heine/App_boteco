@@ -1,0 +1,22 @@
+{
+  "short_name": "RachaConta",
+  "name": "Racha Conta — Divisor de contas de bar",
+  "description": "Divida contas de bar e boteco de forma simples e rápida.",
+  "start_url": "/",
+  "background_color": "#fafaf9",
+  "theme_color": "#d97706",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=192&h=192&fit=crop&q=80",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=512&h=512&fit=crop&q=80",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ]
+}

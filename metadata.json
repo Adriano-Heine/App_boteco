@@ -1,0 +1,6 @@
+{
+  "name": "Racha Conta",
+  "description": "Um divisor de contas simples, rápido e justo para mesas de bar e botecos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
